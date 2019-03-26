@@ -5,7 +5,7 @@ A utility for processing output from the `ffprobe` command that comes with ffmpe
 ## Installation
 Swift Package Manager
 ```swift
-.package(url: "https://github.com/Ponyboy47/FFProbe.git", from: "0.1.0")
+.package(url: "https://github.com/Ponyboy47/FFProbe.git", from: "0.2.0")
 ```
 
 ## Usage
