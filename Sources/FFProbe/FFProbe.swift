@@ -1,6 +1,6 @@
+import class Foundation.JSONDecoder
 import func SwiftShell.run
 import struct TrailBlazer.FilePath
-import class Foundation.JSONDecoder
 
 public final class FFProbe: Decodable {
     public let path: FilePath
@@ -46,10 +46,10 @@ public final class FFProbe: Decodable {
 
         let streams = try container.decode([AnyStream].self, forKey: .streams)
 
-        video = try streams.filter({ $0.type == .video }).map(VideoStream.init)
-        audio = try streams.filter({ $0.type == .audio }).map(AudioStream.init)
-        subtitle = try streams.filter({ $0.type == .subtitle }).map(SubtitleStream.init)
-        data = streams.filter({ $0.type == .data }).map(DataStream.init)
+        video = try streams.filter { $0.type == .video }.map(VideoStream.init)
+        audio = try streams.filter { $0.type == .audio }.map(AudioStream.init)
+        subtitle = try streams.filter { $0.type == .subtitle }.map(SubtitleStream.init)
+        data = streams.filter { $0.type == .data }.map(DataStream.init)
 
         path = FilePath("")!
     }

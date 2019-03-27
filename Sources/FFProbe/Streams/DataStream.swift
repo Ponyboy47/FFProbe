@@ -1,5 +1,5 @@
 public final class DataStream: BaseStream {
-    override public var type: CodecType { return .data }
+    public override var type: CodecType { return .data }
     public let duration: MediaDuration?
     public let bitRate: BitRate?
 

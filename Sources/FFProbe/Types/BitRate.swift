@@ -20,6 +20,7 @@ public struct BitRate: RawRepresentable, ExpressibleByStringLiteral, Expressible
         case .mbps: return value * 1000.0 * 1000.0
         }
     }
+
     public var kbps: Double {
         switch unit {
         case .bps: return value / 1000.0
@@ -27,6 +28,7 @@ public struct BitRate: RawRepresentable, ExpressibleByStringLiteral, Expressible
         case .mbps: return value * 1000.0
         }
     }
+
     public var mbps: Double {
         switch unit {
         case .bps: return value / 1000.0 / 1000.0

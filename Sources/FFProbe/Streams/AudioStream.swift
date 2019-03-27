@@ -1,5 +1,5 @@
 public final class AudioStream: BaseStream {
-    override public var type: CodecType { return .audio }
+    public override var type: CodecType { return .audio }
     public let codec: AudioCodec
     public let duration: MediaDuration?
     public let bitRate: BitRate?

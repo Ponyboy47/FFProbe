@@ -1,5 +1,5 @@
-import class Foundation.DateFormatter
 import struct Foundation.Date
+import class Foundation.DateFormatter
 
 public struct Tags {
     public var language: Language?
@@ -45,16 +45,16 @@ extension Tags: Codable {
 
 public enum Language: String, Codable {
     case eng, // English
-         spa, // Spanish
-         ita, // Italian
-         fre, // French
-         fin, // Finnish
-         ger, // German
-         por, // Portuguese
-         dut, // Dutch
-         jap, // Japanese
-         chi, // Chinese
-         rus, // Russian
-         per, // Persian
-         und  // Undetermined
+        spa, // Spanish
+        ita, // Italian
+        fre, // French
+        fin, // Finnish
+        ger, // German
+        por, // Portuguese
+        dut, // Dutch
+        jap, // Japanese
+        chi, // Chinese
+        rus, // Russian
+        per, // Persian
+        und // Undetermined
 }

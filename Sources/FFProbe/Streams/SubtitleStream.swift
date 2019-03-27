@@ -1,5 +1,5 @@
 public final class SubtitleStream: BaseStream {
-    override public var type: CodecType { return .subtitle }
+    public override var type: CodecType { return .subtitle }
     public let codec: SubtitleCodec
     public let duration: MediaDuration?
     public let bitRate: BitRate?

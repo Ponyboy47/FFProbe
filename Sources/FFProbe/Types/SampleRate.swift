@@ -20,6 +20,7 @@ public struct SampleRate: RawRepresentable, ExpressibleByFloatLiteral, Expressib
         case .mhz: return value * 1000.0 * 1000.0
         }
     }
+
     public var khz: Double {
         switch unit {
         case .hz: return value / 1000.0
@@ -27,6 +28,7 @@ public struct SampleRate: RawRepresentable, ExpressibleByFloatLiteral, Expressib
         case .mhz: return value * 1000.0
         }
     }
+
     public var mhz: Double {
         switch unit {
         case .hz: return value / 1000.0 / 1000.0

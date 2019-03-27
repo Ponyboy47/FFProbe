@@ -7,7 +7,7 @@ public struct FrameRate: RawRepresentable, ExpressibleByFloatLiteral, Expressibl
 
     public init(stringLiteral value: String) {
         if value.contains("/") {
-            let components = value.components(separatedBy: "/").map({ $0.trimmingCharacters(in: .whitespaces) })
+            let components = value.components(separatedBy: "/").map { $0.trimmingCharacters(in: .whitespaces) }
             guard components.count == 2, let numerator = Double(components[0]), let denominator = Double(components[1]) else {
                 self = .unknown
                 return
